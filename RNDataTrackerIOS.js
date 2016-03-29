@@ -1,50 +1,25 @@
 'use strict';
 
-var { NativeModules } = require('react-native');
 var Promise = require('bluebird'); // jshint ignore:line
-var DataTracker = NativeModules.RNDataTrackerIOS;
 
-var _setObjectForKey = Promise.promisify(DataTracker.setObjectForKey);
-var _setBoolForKey = Promise.promisify(DataTracker.setBoolForKey);
+var _getDataIn = Promise.promisify(DataTracker.getDataIn);
+var _getDataOut = Promise.promisify(DataTracker.getDataOut);
 
-var _arrayForKey = Promise.promisify(DataTracker.arrayForKey);
-var _stringForKey = Promise.promisify(DataTracker.stringForKey);
-var _objectForKey = Promise.promisify(DataTracker.objectForKey);
-var _boolForKey = Promise.promisify(DataTracker.boolForKey);
-
-var _removeItemForKey = Promise.promisify(DataTracker.removeObjectForKey);
-var _getAllKeys = Promise.promisify(DataTracker.getAllKeys);
+var _getWifiIn = Promise.promisify(DataTracker.getWifiIn);
+var _getWifiOut = Promise.promisify(DataTracker.getWifiOut);
 
 var DataTracker = {
-    setArrayForKey(array, key) {
-        return _setObjectForKey(array, key);
+    _getDataIn() {
+        return _getDataIn();
     },
-    setStringForKey(string, key) {
-        return _setObjectForKey(string, key);
+    _getDataOut() {
+        return _getDataIn();
     },
-    setObjectForKey(object, key) {
-        return _setObjectForKey(object, key);
+    _getWifiIn() {
+        return _getDataIn();
     },
-    setBoolForKey(bool, key) {
-        return _setBoolForKey(bool, key);
-    },
-    arrayForKey(key) {
-        return _arrayForKey(key);
-    },
-    stringForKey(key) {
-        return _stringForKey(key);
-    },
-    objectForKey(key) {
-        return _objectForKey(key);
-    },
-    boolForKey(key) {
-        return _boolForKey(key);
-    },
-    removeItemForKey(key) {
-        return _removeItemForKey(key);
-    },
-    getAllKeys(key) {
-        return _getAllKeys(key);
+    _getWifiOut() {
+        return _getDataIn();
     }
 };
 

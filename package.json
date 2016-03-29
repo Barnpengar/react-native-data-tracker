@@ -23,16 +23,14 @@
     "react-component",
     "react-native",
     "ios",
-    "nsuserdefaults",
-    "standarduserdefaults",
-    "userdefaults"
+    "data-tracker"
   ],
-  "author": "Dave Sibiski <dsibiski@gmail.com> (https://github.com/dsibiski)",
+  "author": "Anders Back <anders@barnpengar.se> (https://github.com/anback)",
   "license": "MIT",
   "dependencies": {
     "bluebird": "^2.9.25"
   },
   "peerDependencies": {
-    "react-native": ">= 0.4.4 < 1"
+    "react-native": ">= 0.21"
   }
 }
