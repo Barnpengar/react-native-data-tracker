@@ -1,0 +1,13 @@
+language: objective-c
+
+cache:
+  directories:
+  - node_modules
+
+install:
+  - npm install
+  - npm install react-native
+
+xcode_workspace: RNDataTrackerIOS.xcworkspace
+xcode_scheme: RNDataTrackerIOS
+xcode_sdk: iphonesimulator8.1

@@ -1,0 +1,38 @@
+{
+  "name": "react-native-userdefaults-ios",
+  "version": "0.1.3",
+  "description": "React Native Module for NSDataTracker",
+  "main": "RNDataTrackerIOS.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dsibiski/react-native-userdefaults-ios.git"
+  },
+  "files": [
+    "RNDataTrackerIOS.xcodeproj",
+    "RNDataTrackerIOS/RNDataTrackerIOS.h",
+    "RNDataTrackerIOS/RNDataTrackerIOS.m",
+    "RNDataTrackerIOS/DataTrackerManager.h",
+    "RNDataTrackerIOS/DataTrackerManager.m",
+    "RNDataTrackerIOS.js",
+    "README.md"
+  ],
+  "keywords": [
+    "react-component",
+    "react-native",
+    "ios",
+    "nsuserdefaults",
+    "standarduserdefaults",
+    "userdefaults"
+  ],
+  "author": "Dave Sibiski <dsibiski@gmail.com> (https://github.com/dsibiski)",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^2.9.25"
+  },
+  "peerDependencies": {
+    "react-native": ">= 0.4.4 < 1"
+  }
+}
