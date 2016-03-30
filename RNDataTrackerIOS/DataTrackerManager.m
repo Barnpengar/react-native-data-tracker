@@ -10,20 +10,20 @@
 
 @implementation DataTrackerManager
 
-+ (NSString *) getDataIn:(NSString *)whatever {
++ (NSNumber *) getDataIn:(NSNumber *)whatever {
     
     return nil; //To Be Implemented, return 12 MB, or 16 GB (same as in the tracking app)
 }
-+ (NSString *) getDataOut:(NSString *)whatever {
++ (NSNumber *) getDataOut:(NSNumber *)whatever {
     
     return nil; //To Be Implemented
 }
-+ (NSString *) getWifiIn:(NSString *)whatever {
++ (NSNumber *) getWifiIn:(NSNumber *)whatever {
     
     return nil; //To Be Implemented
 }
 
-+ (NSString *) getWifiOut:(NSString *)whatever {
++ (NSNumber *) getWifiOut:(NSNumber *)whatever {
     
     return nil; //To Be Implemented
 }

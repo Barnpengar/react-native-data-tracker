@@ -11,12 +11,12 @@
 @interface DataTrackerManager : NSObject
 
 //To Thomas Maas, plz get rid of the whatever, i cant code objective c, method should not have any arguments
-+ (NSString *)getDataIn:(NSString *)whatever;
++ (NSNumber *)getDataIn:(NSNumber *)whatever;
 
-+ (NSString *)getDataOut:(NSString *)whatever;
++ (NSNumber *)getDataOut:(NSNumber *)whatever;
 
-+ (NSString *)getWifiIn:(NSString *)whatever;
++ (NSNumber *)getWifiIn:(NSNumber *)whatever;
 
-+ (NSString *)getWifiOut:(NSString *)whatever;
++ (NSNumber *)getWifiOut:(NSNumber *)whatever;
 
 @end
