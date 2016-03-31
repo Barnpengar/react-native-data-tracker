@@ -1,5 +1,5 @@
 {
-  "name": "react-native-userdefaults-ios",
+  "name": "react-native-data-tracker",
   "version": "0.1.3",
   "description": "React Native Module for NSDataTracker",
   "main": "RNDataTrackerIOS.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:dsibiski/react-native-userdefaults-ios.git"
+    "url": "git@github.com:Barnpengar/react-native-data-tracker.git"
   },
   "files": [
     "RNDataTrackerIOS.xcodeproj",
