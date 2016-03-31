@@ -1,6 +1,8 @@
 'use strict';
 
+var { NativeModules } = require('react-native');
 var Promise = require('bluebird'); // jshint ignore:line
+var DataTracker = NativeModules.RNDataTrackerIOS;
 
 var _getDataIn = Promise.promisify(DataTracker.getDataIn);
 var _getDataOut = Promise.promisify(DataTracker.getDataOut);
@@ -9,16 +11,16 @@ var _getWifiIn = Promise.promisify(DataTracker.getWifiIn);
 var _getWifiOut = Promise.promisify(DataTracker.getWifiOut);
 
 var DataTracker = {
-    _getDataIn() {
+    getDataIn() {
         return _getDataIn();
     },
-    _getDataOut() {
+    getDataOut() {
         return _getDataIn();
     },
-    _getWifiIn() {
+    getWifiIn() {
         return _getDataIn();
     },
-    _getWifiOut() {
+    getWifiOut() {
         return _getDataIn();
     }
 };
