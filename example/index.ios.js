@@ -18,39 +18,20 @@ var dataoutValue = 0;
 var wifiinValue = 0;
 var wifioutValue = 0;
 
-// DataTracker.getDataIn((error, response) => {
-//   if (error) {
-//     console.log(error);
-//   } else {
-//     datainValue = response;
-//   }
-// })
-
-// DataTracker.getDataOut((error, response) => {
-//   if (error) {
-//     console.log(error);
-//   } else {
-//     dataoutValue = response;
-//   }
-// })
-
-// DataTracker.getWifiIn((error, response) => {
-//   if (error) {
-//     console.log(error);
-//   } else {
-//     wifiinValue = response;
-//   }
-// })
-
-// DataTracker.getWifiOut((error, response) => {
-//   if (error) {
-//     console.log(error);
-//   } else {
-//     wifioutValue = response;
-//   }
-// })
-
 class TestProject extends Component {
+  constructor() {
+    super()
+    this.state = {}
+    DataTracker.getDataIn()
+      .then(val => this.setState({dataIn : val}))
+    DataTracker.getDataOut()
+      .then(val => this.setState({dataOut : val}))
+    DataTracker.getWifiIn()
+      .then(val => this.setState({wifiIn : val}))
+    DataTracker.getWifiOut()
+      .then(val => this.setState({wifiOut : val}))
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -61,29 +42,25 @@ class TestProject extends Component {
           DataIn Value:
         </Text>
         <Text style={styles.instructions}>
-        {DataTracker.getDataIn()}
+          {this.state.dataIn}
         </Text>
         <Text style={styles.label}>
           DataOut Value:
         </Text>
         <Text style={styles.instructions}>
-        {DataTracker.getDataOut()}
+          {this.state.dataOut}
         </Text>
         <Text style={styles.label}>
           WifiIn Value:
         </Text>
         <Text style={styles.instructions}>
-        {DataTracker.getWifiIn()}
+          {this.state.wifiIn}
         </Text>
         <Text style={styles.label}>
           WifiOut Value:
         </Text>
         <Text style={styles.instructions}>
-        {DataTracker.getWifiOut()}
-        </Text>
-        <Text style={styles.instructions}>
-          {'\n'}Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
+          {this.state.wifiOut}
         </Text>
       </View>
     );
