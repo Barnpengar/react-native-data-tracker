@@ -14,7 +14,7 @@
 
 RCT_EXPORT_MODULE()
 
-RCT_EXPORT_METHOD(getDataIn:(id)object callback:(RCTResponseSenderBlock)callback) {
+RCT_EXPORT_METHOD(getDataIn:(RCTResponseSenderBlock)callback) {
     id response = [DataTrackerManager getDataIn];
     
     if (response) {
@@ -27,7 +27,7 @@ RCT_EXPORT_METHOD(getDataIn:(id)object callback:(RCTResponseSenderBlock)callback
     }
 }
 
-RCT_EXPORT_METHOD(getDataOut:(id)object callback:(RCTResponseSenderBlock)callback) {
+RCT_EXPORT_METHOD(getDataOut:(RCTResponseSenderBlock)callback) {
     id response = [DataTrackerManager getDataOut];
     
     if (response) {
@@ -40,7 +40,7 @@ RCT_EXPORT_METHOD(getDataOut:(id)object callback:(RCTResponseSenderBlock)callbac
     }
 }
 
-RCT_EXPORT_METHOD(getWifiIn:(id)object callback:(RCTResponseSenderBlock)callback) {
+RCT_EXPORT_METHOD(getWifiIn:(RCTResponseSenderBlock)callback) {
     id response = [DataTrackerManager getWifiIn];
     
     if (response) {
@@ -53,7 +53,7 @@ RCT_EXPORT_METHOD(getWifiIn:(id)object callback:(RCTResponseSenderBlock)callback
     }
 }
 
-RCT_EXPORT_METHOD(getWifiOut:(id)object callback:(RCTResponseSenderBlock)callback) {
+RCT_EXPORT_METHOD(getWifiOut:(RCTResponseSenderBlock)callback) {
     id response = [DataTrackerManager getWifiOut];
     
     if (response) {

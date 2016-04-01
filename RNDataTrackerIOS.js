@@ -2,7 +2,7 @@
 
 var { NativeModules } = require('react-native');
 var Promise = require('bluebird'); // jshint ignore:line
-var DataTracker = NativeModules.RNDataTrackerIOS;
+var DataTrackers = NativeModules.RNDataTrackerIOS;
 
 var _getDataIn = Promise.promisify(DataTracker.getDataIn);
 var _getDataOut = Promise.promisify(DataTracker.getDataOut);
@@ -12,16 +12,28 @@ var _getWifiOut = Promise.promisify(DataTracker.getWifiOut);
 
 var DataTracker = {
     getDataIn() {
-        return _getDataIn();
+        _getDataIn();
+        return "123";//
     },
     getDataOut() {
-        return _getDataIn();
+        _getDataOut();
+        return "3456";//
     },
     getWifiIn() {
-        return _getDataIn();
+        _getWifiIn();
+        return "5643456";//
     },
     getWifiOut() {
-        return _getDataIn();
+        var wifioutValue = "qwer";
+        DataTrackers.getWifiOut((error, data) => {
+          if (error) {
+            wifioutValue = "qwere";
+          } else {
+            wifioutValue = "qwerer";
+          }
+        })
+        return wifioutValue;
+        // return _getWifiOut();
     }
 };
 

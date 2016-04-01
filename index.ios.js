@@ -12,7 +12,7 @@ import React, {
 } from 'react-native';
 
 var DataTracker = require('react-native-data-tracker');
-// var UserDefaults = require('react-native-userdefaults-ios');
+var UserDefaults = require('react-native-userdefaults-ios');
 
 var datainValue = 0;
 var dataoutValue = 0;
