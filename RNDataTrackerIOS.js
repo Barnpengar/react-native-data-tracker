@@ -12,29 +12,17 @@ var _getWifiOut = Promise.promisify(DataTrackers.getWifiOut);
 
 var DataTracker = {
     getDataIn() {
-        _getDataIn();
-        return "123";//
+        return _getDataIn()
     },
     getDataOut() {
-        _getDataOut();
-        return "3456";//
+        return _getDataOut()
     },
     getWifiIn() {
-        _getWifiIn();
-        return "5643456";//
+        return _getWifiIn()
     },
     getWifiOut() {
-        var wifioutValue = "1234";
-        DataTrackers.getWifiOut((error, data) => {
-          if (error) {
-            wifioutValue = "12345";
-          } else {
-            wifioutValue = "123456";
-          }
-        })
-        return wifioutValue;
-        // return _getWifiOut();
+        return _getWifiOut()
     }
 };
 
-module.exports = DataTracker;
+module.exports = DataTracker
