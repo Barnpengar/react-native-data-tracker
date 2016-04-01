@@ -110,4 +110,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('DataTrackerTetster', () => TestProject);
+AppRegistry.registerComponent('TestProject', () => TestProject);
