@@ -24,12 +24,12 @@ var DataTracker = {
         return "5643456";//
     },
     getWifiOut() {
-        var wifioutValue = "qwer";
+        var wifioutValue = "1234";
         DataTrackers.getWifiOut((error, data) => {
           if (error) {
-            wifioutValue = "qwere";
+            wifioutValue = "12345";
           } else {
-            wifioutValue = "qwerer";
+            wifioutValue = "123456";
           }
         })
         return wifioutValue;
