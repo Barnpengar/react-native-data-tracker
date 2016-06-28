@@ -31,6 +31,6 @@
     "es6-promisify": "^4.1.0"
   },
   "peerDependencies": {
-    "react-native": ">= 0.28"
+    "react-native": ">= 0.27"
   }
 }
