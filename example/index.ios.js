@@ -2,10 +2,9 @@
  * Sample React Native App
  * https://github.com/facebook/react-native
  */
-
-import React, {
+import React, {Component} from "react"
+import {
   AppRegistry,
-  Component,
   StyleSheet,
   Text,
   View
@@ -19,8 +18,8 @@ var wifiinValue = 0;
 var wifioutValue = 0;
 
 class TestProject extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {}
     DataTracker.getDataIn()
       .then(val => this.setState({dataIn : val}))
