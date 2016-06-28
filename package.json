@@ -28,9 +28,9 @@
   "author": "Anders Back <anders@barnpengar.se> (https://github.com/anback)",
   "license": "MIT",
   "dependencies": {
-    "bluebird": "^2.9.25"
+    "es6-promisify": "^4.1.0"
   },
   "peerDependencies": {
-    "react-native": ">= 0.21"
+    "react-native": ">= 0.27"
   }
 }
