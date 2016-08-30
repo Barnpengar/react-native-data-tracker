@@ -10,15 +10,6 @@
     "type": "git",
     "url": "git@github.com:Barnpengar/react-native-data-tracker.git"
   },
-  "files": [
-    "RNDataTrackerIOS.xcodeproj",
-    "RNDataTrackerIOS/RNDataTrackerIOS.h",
-    "RNDataTrackerIOS/RNDataTrackerIOS.m",
-    "RNDataTrackerIOS/DataTrackerManager.h",
-    "RNDataTrackerIOS/DataTrackerManager.m",
-    "RNDataTrackerIOS.js",
-    "README.md"
-  ],
   "keywords": [
     "react-component",
     "react-native",
