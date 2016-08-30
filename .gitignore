@@ -23,3 +23,21 @@ node_modules/
 
 # CocoaPods
 Pods/
+
+android/.gradle/
+
+android/.idea/
+
+android/build/
+
+android/gradle/
+
+android/gradlew
+
+android/gradlew.bat
+
+android/local.properties
+
+example/android/gradle/wrapper/gradle-wrapper.jar
+
+example/android/gradle/wrapper/gradle-wrapper.properties
