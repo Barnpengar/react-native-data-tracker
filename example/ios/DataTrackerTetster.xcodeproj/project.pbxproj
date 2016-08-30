@@ -22,7 +22,6 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		9A9A6A1F1D227D5700928E64 /* libRNDataTrackerIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9A6A1C1D227D4900928E64 /* libRNDataTrackerIOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,16 +102,16 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
-		9A9A6A1B1D227D4900928E64 /* PBXContainerItemProxy */ = {
+		992177C31D7522D9006EF0CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9A9A6A0C1D227D4900928E64 /* RNDataTrackerIOS.xcodeproj */;
+			containerPortal = 992177BE1D7522D9006EF0CD /* RNDataTrackerIOS.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 559FCEEF1B06A72F003129B0;
 			remoteInfo = RNDataTrackerIOS;
 		};
-		9A9A6A1D1D227D4900928E64 /* PBXContainerItemProxy */ = {
+		992177C51D7522D9006EF0CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9A9A6A0C1D227D4900928E64 /* RNDataTrackerIOS.xcodeproj */;
+			containerPortal = 992177BE1D7522D9006EF0CD /* RNDataTrackerIOS.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 559FCEFA1B06A72F003129B0;
 			remoteInfo = RNDataTrackerIOSTests;
@@ -141,7 +140,7 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		9A9A6A0C1D227D4900928E64 /* RNDataTrackerIOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNDataTrackerIOS.xcodeproj; path = "../node_modules/react-native-data-tracker/RNDataTrackerIOS.xcodeproj"; sourceTree = "<group>"; };
+		992177BE1D7522D9006EF0CD /* RNDataTrackerIOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNDataTrackerIOS.xcodeproj; path = "../node_modules/react-native-data-tracker/ios/RNDataTrackerIOS.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +155,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A9A6A1F1D227D5700928E64 /* libRNDataTrackerIOS.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
@@ -279,7 +277,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				9A9A6A0C1D227D4900928E64 /* RNDataTrackerIOS.xcodeproj */,
+				992177BE1D7522D9006EF0CD /* RNDataTrackerIOS.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
 				00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */,
@@ -323,11 +321,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9A9A6A0D1D227D4900928E64 /* Products */ = {
+		992177BF1D7522D9006EF0CD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9A9A6A1C1D227D4900928E64 /* libRNDataTrackerIOS.a */,
-				9A9A6A1E1D227D4900928E64 /* RNDataTrackerIOSTests.xctest */,
+				992177C41D7522D9006EF0CD /* libRNDataTrackerIOS.a */,
+				992177C61D7522D9006EF0CD /* RNDataTrackerIOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -439,8 +437,8 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
-					ProductGroup = 9A9A6A0D1D227D4900928E64 /* Products */;
-					ProjectRef = 9A9A6A0C1D227D4900928E64 /* RNDataTrackerIOS.xcodeproj */;
+					ProductGroup = 992177BF1D7522D9006EF0CD /* Products */;
+					ProjectRef = 992177BE1D7522D9006EF0CD /* RNDataTrackerIOS.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -522,18 +520,18 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		9A9A6A1C1D227D4900928E64 /* libRNDataTrackerIOS.a */ = {
+		992177C41D7522D9006EF0CD /* libRNDataTrackerIOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRNDataTrackerIOS.a;
-			remoteRef = 9A9A6A1B1D227D4900928E64 /* PBXContainerItemProxy */;
+			remoteRef = 992177C31D7522D9006EF0CD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		9A9A6A1E1D227D4900928E64 /* RNDataTrackerIOSTests.xctest */ = {
+		992177C61D7522D9006EF0CD /* RNDataTrackerIOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = RNDataTrackerIOSTests.xctest;
-			remoteRef = 9A9A6A1D1D227D4900928E64 /* PBXContainerItemProxy */;
+			remoteRef = 992177C51D7522D9006EF0CD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
