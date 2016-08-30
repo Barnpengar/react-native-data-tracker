@@ -50,7 +50,7 @@ public class RNDataTrackerModule extends ReactContextBaseJavaModule {
         if (currentActivity == null) {promise.reject("Activity doesn't exist"); return;}
         if (TrafficStats.getTotalTxBytes() == TrafficStats.UNSUPPORTED) {promise.reject("TrafficStats is not supported"); return;}
 
-        promise.resolve((int) (long) (TrafficStats.getTotalTxBytes() - TrafficStats.getMobileRxBytes()));
+        promise.resolve((int) (long) (TrafficStats.getTotalTxBytes() - TrafficStats.getMobileTxBytes()));
     }
 
 
