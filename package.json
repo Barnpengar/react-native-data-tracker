@@ -2,7 +2,7 @@
   "name": "react-native-data-tracker",
   "version": "0.1.3",
   "description": "React Native Module for NSDataTracker",
-  "main": "RNDataTrackerIOS.js",
+  "main": "RNDataTracker.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

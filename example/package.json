@@ -7,7 +7,7 @@
     "upgrade" : "react-native upgrade"
   },
   "dependencies": {
-    "react": "15.1.0",
+    "react": "15.2.1",
     "react-native": "0.31.0",
     "react-native-data-tracker" : "git+https://github.com/Barnpengar/react-native-data-tracker.git"
   }
