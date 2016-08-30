@@ -1,7 +1,7 @@
 'use strict';
 
 var { NativeModules } = require('react-native');
-var DataTrackers = NativeModules.RNDataTrackerIOS;
+var DataTrackers = NativeModules.RNDataTracker;
 const promisify = require("es6-promisify");
 
 var _getDataIn = promisify(DataTrackers.getDataIn);
