@@ -3,14 +3,13 @@
  * https://github.com/facebook/react-native
  */
 import React, {Component} from "react"
+import DataTracker from "react-native-data-tracker"
 import {
   AppRegistry,
   StyleSheet,
   Text,
   View
 } from 'react-native';
-
-var DataTracker = require('react-native-data-tracker');
 
 var datainValue = 0;
 var dataoutValue = 0;
