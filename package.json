@@ -22,6 +22,6 @@
     "es6-promisify": "^4.1.0"
   },
   "peerDependencies": {
-    "react-native": "0.31.0"
+    "react-native": "0.x"
   }
 }
